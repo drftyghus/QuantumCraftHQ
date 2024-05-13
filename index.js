@@ -1,1 +1,8 @@
-const sample = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const linearSearch = (arr, target) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      return i;
+    }
+  }
+  return -1;
+};
